@@ -1,0 +1,44 @@
+name: metro
+description: A simple metronome app. A must have for every musician.
+publish_to: 'none' # Remove this line if you wish to publish to pub.dev
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.1.3 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  cupertino_icons: ^1.0.2
+  sqflite: ^2.0.3
+  provider: ^6.1.1
+  shared_preferences: ^2.2.2
+  flutter_svg: 2.0.2
+  wakelock: ^0.6.2
+  avatar_glow: ^3.0.1
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  flutter_lints: ^2.0.0
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/images/
+
+  fonts:
+    - family: WorkSans
+      fonts:
+        - asset: fonts/WorkSans/WorkSans-Regular.ttf
+        - asset: fonts/WorkSans/WorkSans-Medium.ttf
+          weight: 500
+        - asset: fonts/WorkSans/WorkSans-SemiBold.ttf
+          weight: 600
+        - asset: fonts/WorkSans/WorkSans-Bold.ttf
+          weight: 700
+        - asset: fonts/WorkSans/WorkSans-Italic.ttf
+          style: italic
